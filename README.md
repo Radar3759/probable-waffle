@@ -7,3 +7,4 @@
 1. Day 4 - Rock Paper Scissors
 1. Day 5 - Password Generator
 1. Day 6 - Escaping the Maze (no code to share here)
+1. Day 7 - Hangman
