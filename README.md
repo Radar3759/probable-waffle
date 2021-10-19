@@ -9,3 +9,5 @@
 1. Day 6 - Escaping the Maze (no code to share here)
 1. Day 7 - Hangman
 1. Day 8 - Caesar Cipher
+1. Day 9 - Secret Auction (file not added yet)
+1. Day 10 - Calculator
