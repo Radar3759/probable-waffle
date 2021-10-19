@@ -1,3 +1,5 @@
+from art import logo
+
 def add(n1, n2):
   return n1 + n2
 def subtract(n1, n2):
@@ -13,20 +15,28 @@ operations = {
   "*": multiply, 
   "/": divide
   }  
+def calculator():
+  print(logo)
+  n1= float(input("What's the first number?: "))
+  #with dict loops through keys
+  for symbol in operations:
+    print(symbol)
 
-n1= int(input("What's the first number?: \n"))
-#dict loops through keys
-for symbol in operations:
-  print(symbol)
-operation_symbol = (input("\n What operation would you like? (see above) "))
+  should_continue = True
 
-n2= int(input("What's the second number?: \n"))
-calc_function = operations[operation_symbol]
-answer = (calc_function(n1, n2))
-print(f"{n1} {operation_symbol} {n2} = {answer}")
+  while should_continue:  
+    operation_symbol = (input("\nWhat operation would you like? (see above) "))
 
-operation_symbol = (input("\n Pick another operation (see above) "))
-n3 = int(input("What's the next nubmer? \n"))
-calc_function = operations[operation_symbol]
-second_answer = calc_function(answer, n3)
-print(f"{answer} {operation_symbol} {n3} = {second_answer}")
+    n2= float(input("What's the second number?: "))
+
+    calc_function = operations[operation_symbol]
+    answer = (calc_function(n1, n2))
+    
+    print(f"{n1} {operation_symbol} {n2} = {answer}")
+
+    if input(f"Type 'y' to continue with {answer}, or type 'n' to start a new calculation ") == "y":
+      n1 = answer
+    else:  
+      should_continue = False
+      calculator()
+calculator()      
