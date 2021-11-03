@@ -1,5 +1,6 @@
 # probable-waffle
-100 Days of Python Projects
+
+## 100 Days of Python Projects
 
 1. Day 1 - Random Band Name Generator
 1. Day 2 - Tip Calculator
@@ -11,3 +12,4 @@
 1. Day 8 - Caesar Cipher
 1. Day 9 - Secret Auction (file not added yet)
 1. Day 10 - Calculator
+1. Day 11 - Blackjack
