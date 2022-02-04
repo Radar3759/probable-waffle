@@ -1,32 +1,38 @@
 import random
 
 #ASCII art from https://www.udemy.com/course/100-days-of-code
-rock = '''
+
+import random
+
+rock = """\u001b[36m
+  
     _______
 ---'   ____)
       (_____)
       (_____)
       (____)
 ---.__(___)
-'''
+\u001b[37m
+  """
 
-paper = '''
+paper = """\u001b[31m
     _______
 ---'   ____)____
           ______)
           _______)
          _______)
 ---.__________)
-'''
+\u001b[37m"""
 
-scissors = '''
+scissors = """\u001b[32m
     _______
 ---'   ____)____
           ______)
        __________)
       (____)
 ---.__(___)
-'''
+\u001b[37m
+  """
 
 print("Welcome to Rock, Paper, Scissors Ultimate Challenge!\n")
 
